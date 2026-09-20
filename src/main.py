@@ -123,7 +123,6 @@ plt.close()
 
 print(f"\n最终测试集准确率: {test_accs[-1]:.4f}  ({test_accs[-1]*100:.2f}%)")
 
-# 保存模型和预处理信息（题目要求：保存可重新加载的模型）
 torch.save({
     "model_state": model.state_dict(),
     "mean": mean,
